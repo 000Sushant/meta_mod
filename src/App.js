@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/HomePage';
+import SQL from './pages/SQLInjection';
+import Footer from './components/Footer';
+import XSS from "./pages/XSSInjection";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <nav>
+                <Navbar />
+            </nav>
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route exact path='/SQLInjection' element={<SQL />} />
+                <Route exact path='/XSSInjection' element={<XSS />} />
+            </Routes>
+            <footer>
+                <Footer />
+            </footer>
+        </BrowserRouter>
+    );
 }
 
 export default App;

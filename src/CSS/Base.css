@@ -1,0 +1,26 @@
+.title{
+    font-family: 'Young Serif', serif;
+}
+.body{
+    background: rgb(183,161,234);
+    background: linear-gradient(132deg, rgba(183,161,234,1) 0%, rgba(230,196,242,0.9273504273504274) 69%, rgba(210,143,215,1) 100%);
+}
+.btn-custom-purple{
+    background-color: #822ab1;
+    border: 2px solid black;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn-custom-purple:hover{
+    text-decoration: none;
+    color: white;
+}
+.social-icon{
+    color: rgba(255, 255, 255, 0.923);
+}
+.purple-line{
+    background-color: #822ab1;
+}
