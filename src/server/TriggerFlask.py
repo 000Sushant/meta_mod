@@ -16,6 +16,7 @@ def predict_sqli():
     model_path = '../model/SqlModel.pkl'
     return predict(model_path)
 
+
 # Function to load and use the model
 def predict(model_path):
     model = joblib.load(model_path)

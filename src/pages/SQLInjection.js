@@ -13,7 +13,7 @@ const SQLInjection = () => {
         <div className='col-md-6 mx-auto my-auto'>
           <p className='mb-0'>Welcome to</p>
           <h2 className='title'>MetaMod/SQLi</h2>
-          <p className='my-4'>Validate SQL Injection with 99.83% accuracy</p>
+          <p className='my-4'>Validate SQL Injection with 99.21% accuracy</p>
           <SQLInputForm />
           <Link className='text-dark text-decoration-none'>Learn more about <b>metamod/sqli</b></Link>
         </div>
